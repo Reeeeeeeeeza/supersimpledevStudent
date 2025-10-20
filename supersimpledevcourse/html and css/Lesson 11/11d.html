@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .L1{
+            /* border: 1px solid black; */
+            width: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        }
+        .K1{
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+        }
+        .name{
+            font-size: 12px;
+            font-weight: bold;
+            padding-top: 2px;
+        }
+
+        .K3{
+            height: 20px;
+            width: 20px;
+            border-radius: 30px;
+            object-fit:cover;
+
+        }
+        .middle{
+            /* border: 1px solid black; */
+            width: fit-content;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 25px 120px;
+        }
+        .mutuals{
+            font-size:10px;
+            color: gray;
+        }
+        button{
+            margin-top: 3px;
+            background-color: rgb(56, 121, 233);
+            color: white;
+            border: none;
+            font-size: 10px;
+            border-radius: 2px;
+            padding: 5px 15px; 
+        }
+        .handsome-guy{
+            margin-left: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="L1">
+            <img class="K1" src="baddie.png" alt="">
+
+            <div class="handsome-guy">
+                <div class="name">
+                    Oliver
+                </div>
+
+                 <div class="middle">    
+                    <img class="K3" src="baddie 1.0.png" alt="">
+                    <div class="mutuals">
+                        2 mutual friends
+                    </div>
+                </div>
+
+                <button>
+                    Add Friend
+                </button>
+
+            </div>
+        </div>
+
+        <div class="L1">
+            <img class="K1" src="baddie.png" alt="">
+
+            <div class="handsome-guy">
+                <div class="name">
+                    Oliver
+                </div>
+
+                 <div class="middle">    
+                    <img class="K3" src="baddie 1.0.png" alt="">
+                    <div class="mutuals">
+                        2 mutual friends
+                    </div>
+                </div>
+
+                <button>
+                    Add Friend
+                </button>
+                
+            </div>
+        </div>
+
+        <div class="L1">
+            <img class="K1" src="baddie 1.0.png" alt="">
+
+            <div class="handsome-guy">
+                <div class="name">
+                    Kayoko
+                </div>
+
+                 <div class="middle">    
+                    <img class="K3" src="baddie.png" alt="">
+                    <div class="mutuals">
+                        2 mutual friends
+                    </div>
+                </div>
+
+                <button>
+                    Add Friend
+                </button>
+                
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
