@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .subContainer2{
+            display: flex;
+            flex-direction: column;
+        }
+        .subsubContainer2{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subContainer1" style="background-color: pink; width: 200px;">        </div>
+        <div class="subContainer2" style="background-color: skyblue; flex:1;">
+            <div class="subsubContainer1">row1</div>
+            <div class="subsubContainer2">
+                <div class="subsubsubContainer1" style="background-color: black; color: white; height: fit-content;">row2</div>
+                <div class="subsubsubContainer2" style="background-color: black; color: white; height: fit-content;">row2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .top{
+            display: flex;
+            column-gap: 0.5rem;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        img{
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+        }
+
+        .second-line{
+            font-weight: lighter;
+            width: 300px;
+            padding-top: 0.3rem;
+        }
+        span{
+            color: gray;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+        .bottom{
+            display: flex;
+            margin-left: 2.5rem;
+            border: 0.5px gray solid;
+            width: fit-content;
+            border-radius: 10px;
+            margin-top: 0.5rem;
+        }
+        .gray-part{
+            height: 80px;
+            width: 80px;
+            background-color: rgb(177, 173, 173);
+            border-radius: 10px 0px 0px 10px ;
+            margin-right: 0.3rem;
+        }
+        .bottom-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .url{
+            font-size: 12px;
+            color: gray;
+        }
+        .video-name{
+            width: 200px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="baddie 1.0.png" alt="">
+            <div class="top-right">
+                <div class="first-line">
+                    supersimple.dev
+                    <span>@SuperSimpleDev</span>
+                </div>
+                <div class="second-line">
+                    What is backend web development? A complete overview. New video is up!
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="gray-part">
+
+            </div>
+            <div class="bottom-right">
+                <div class="url">
+                    youtube.com
+                </div>
+                <div class="video-name">
+                    Backend web development - a complete overview (2021)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
