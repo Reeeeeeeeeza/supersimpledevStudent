@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 3000px;
+        }
+        .side-bar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20vw;
+            height: 100vh;
+            display: flex;
+        }
+        .leftist{
+            background-color: rgb(32, 34, 38);
+            width: 4vw;
+            height: 100vh;
+        }
+        .rightist{
+            background-color: rgb(47, 49, 53);
+            width: 15vw;
+            height: 100vh;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            padding-top: 0.7rem;
+            padding-left: 0.5rem;
+            object-fit: cover;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .textss, .sign{
+            padding: 10px 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .sign{
+            color: gray;
+            font-size: 16px;
+        }
+        .bottom{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 2.3rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div class="leftist">
+                <img src="baddie 1.0.png" alt="">
+                <img src="baddie 2.0.jpg" alt="">
+                <img src="admiral.jpg" alt="">
+            </div>
+            <div class="rightist">
+                <div class="top">
+                    <div class="textss">INFO</div>
+                    <div class="sign">+</div>
+                </div>
+                <div class="bottom">
+                    <div class="new-vids"># new-videos</div>
+                    <div class="upda"># updates</div>
+                    <div class="faq"># faq</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
