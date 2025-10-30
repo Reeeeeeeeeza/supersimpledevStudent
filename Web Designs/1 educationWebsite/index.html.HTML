@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+      overflow-x: hidden; 
+    }
+
+    .container{
+      display: grid;
+      background-color: purple;
+      grid-template-rows: max-content;
+    }
+
+    .home{
+      top: 0px;
+      left: 0px;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .home video{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .navbar{
+      width: 100vw;
+      display: flex;
+      padding-top: 5vh;   
+      padding-left: 15vw;
+      padding-right: 15vw;   
+      position: absolute;
+      justify-content: space-between;
+      font-family: montserrat, sans-serif;
+    }
+
+    li{
+      width: 30vw;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo{
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.35rem;
+      font-family: montserrat, sans-serif;
+    }
+
+    .subs{
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      padding: 0.3rem 1rem;
+    }
+
+    .home-body {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+    }
+
+    h1{
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: montserrat, sans-serif;
+      letter-spacing:0.08em;
+      text-align: center;
+    }
+
+    .para{
+      font-family: montserrat, sans-serif;
+      letter-spacing:0.08em;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="home">
+      <video autoplay loop muted playsinline src="resources/background-home.mp4"></video>
+      <div class="navbar">
+        <div class="logo">AUTONO</div>
+        <li>
+          <ul>Technology</ul>
+          <ul>About</ul>
+          <ul>Careers</ul>
+          <ul><span class="subs">Subscribe</span></ul>
+        </li>
+      </div>
+      <div class="home-body">
+        <h1>THE FUTURE OF MOBILITY IS HERE</h1>
+        <p class="para">Discover the safest self-driving experience with Autono.</p>
+      </div>
+    </div>
+
+
+    
+    <div class="vision">vision</div>
+    <div class="services">SERVICES</div>
+    <div class="why-autono">WHY AUTONO</div>
+    <div class="autono-in-num">AUTONO IN NUMBERS</div>
+    <div class="partners">PARTNERS</div>
+    <div class="careers">CAREERS</div>
+    <div class="footer">FOOTER</div>
+  </div>
+
+</body>
+</html>
