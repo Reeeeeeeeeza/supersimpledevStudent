@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let items = 47.93;
+      let shipping = 4.99;
+      let total = items + shipping;
+      let tax = total * 0.01;
+      total = total + tax;
+      total = total.toFixed(2);
+      document.body.innerHTML = `Order total: $${total}`;
+    </script>
+  </body>
+</html>

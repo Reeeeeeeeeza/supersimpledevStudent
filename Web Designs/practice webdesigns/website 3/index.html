@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>Youtube</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 23px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header__left img{
+            padding-left: 15px;
+        }
+        .header__left{
+            padding-top: 5px;
+        }
+        .header__middle{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header__middle input{
+            height: 5vh;
+            width: 35vw;
+            border: solid rgb(136, 126, 126, 0.5) 1px;
+            border-radius: 50px 0px 0px 50px; /* top-left, top-right, bottom-right, bottom-left */
+            padding-left: 10px;
+            font-size: 16px;
+            color: rgba(136, 126, 126, 0.842);
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        .header__middle i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(211, 211, 211, 0.5);
+            width: 4vw;
+            height: 36px;
+            border-radius: 0px 50px 50px 0px;
+        }
+        .header__middle span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            font-variation-settings: 'FILL' 1;
+            background-color: rgba(211, 211, 211, 0.5);
+            border-radius: 50px 50px 50px 50px;
+            margin-left: 10px;
+        }
+        .header__right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 15vw;
+        }  
+        .header__right div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 7vw;
+            height: 6vh;
+            border-radius: 50px;
+            background-color: rgba(211, 211, 211, 0.5);
+        }
+        .header__right img{
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+        }
+        .body{
+            display: flex;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+        .right__body{
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            width: 5vw;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        .home__icon, .shorts__icon, .subscriptions__icon, .you__icon{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: center;
+        }
+        .first{
+            background-color: rgba(211, 211, 211, 0.5);
+            color: black;
+            height: 5vh;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Roboto, 'sans-serif';
+            font-size: 14px;
+            padding-right: 12px;
+            padding-left: 12px;
+            border-radius: 8px;
+            align-content: center;
+        }
+        .left_body_upper{
+            display: flex;
+            gap: 10px;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        .left_body_bottom_block img{
+            width: 350px;
+            height: 200px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .left_body_bottom{
+            display: flex;
+            width: 20vh;
+        }
+        .left_body_bottom_block{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .left_body_bottom_block_bottom{
+            display: flex;
+            padding-top: 5px;
+
+        }
+        .left_body_bottom_block_bottom .description_text{
+            width: 300px;
+            font-family: roboto;
+            font-weight: 600;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        .left_body_bottom_block_bottom img{
+            border-radius: 50px;
+            width: 40px;
+            height: 40px;
+        }
+        .left_body_bottom_block_bottom .details{
+            color: rgba(136, 126, 126, 0.842);
+            font-size: 14px;
+            font-weight: 100;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header__left">
+            <i class="material-symbols-outlined"
+            style="font-variation-settings: 'wght' 100;">
+                menu
+            </i>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" width="90px">
+        </div>
+        <div class="header__middle">
+            <form action="">
+                <input type="text" value="Search">
+            </form>
+            <i class="material-symbols-outlined">
+                search
+                </i>
+            <span class="material-symbols-outlined">
+                mic
+                </span>
+        </div>
+        <div class="header__right">
+            <div>
+                <i class="material-symbols-outlined">
+                    add
+                    </i>
+                    Create
+                    
+            </div>
+
+            <i  class="material-symbols-outlined" style="font-size: 32px;" >
+                notifications
+                </i>
+            <img  src="resources/2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="right__body">
+            <div class="home__icon">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+                    Home    
+            </div>
+            <div class="shorts__icon">
+                <img width="24" height="24" src="https://img.icons8.com/material-outlined/48/1A1A1A/youtube-shorts.png" alt="youtube-shorts"/>
+                Shorts
+            </div>
+            <div class="subscriptions__icon">
+                <span class="material-symbols-outlined">
+                    subscriptions
+                    </span>
+                    Subscriptions    
+            </div>
+            <div class="you__icon">     
+                <span class="material-symbols-outlined">
+                    account_circle
+                    </span>      
+                    You
+            </div>              
+        </div>
+        <div class="left__body">
+            <div class="left_body_upper">
+                <div class="first">All</div>
+                <div class="first">Music</div>
+                <div class="first">Mixes</div>
+                <div class="first">ACP Pradyuman</div>
+                <div class="first">Chocolate</div>
+                <div class="first">Pakistani dramas</div>
+                <div class="first">Live</div>
+                <div class="first">Gaming</div>
+                <div class="first">Motu Patlu</div>
+                <div class="first">Candy</div>
+                <div class="first">Qawwali music</div>
+                <div class="first">Adhan</div>
+                <div class="first">Dramedy</div>
+            </div>
+        <div class="left_body_bottom">
+            <div class="left_body_bottom_block">
+                <img src="https://i.ytimg.com/vi/1qyCdAuoVNM/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBUzjodoppCanVwQn5nzxxmScrWBQ" alt="">
+                
+                <div class="left_body_bottom_block_bottom">
+                    <img src="https://i.ytimg.com/vi/1qyCdAuoVNM/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBUzjodoppCanVwQn5nzxxmScrWBQ" alt="">
+                    <div class="description_text">
+                        Real Food vs Chocolate Food Challenge | Funny Kitchen Hacks by ChallengeTeen
+                        <span class="details">
+                            ChallengeTeen Korean <br>
+                            131k views . 3 weeks ago<br>
+                            Dubbed
+                        </span>
+                    </div>
+                    
+                  
+                    
+
+                    
+
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

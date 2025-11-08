@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      #splash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: white;
+        transition: opacity 1s ease;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: fadeOut 1s ease 2s forwards;
+      }
+      /* li.list$*8 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .main {
+        display: grid;
+        animation: showContent 1s ease 3s forwards;
+      }
+
+      .logo {
+        height: 25vh;
+        width: 20vw;
+        margin-right: 5vw;
+      }
+
+      .body1 {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .body1 video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      .body1 .header {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        color: white;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 2vh;
+      }
+
+      .body1 .header .right-header {
+        display: flex;
+        color: gold;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 5vw;
+        list-style: none;
+        margin-top: 5vh;
+      }
+
+      .body1 .header .left-header {
+        display: flex;
+        color: gold;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5vw;
+        list-style: none;
+        margin-top: 5vh;
+      }
+
+      .body2 {
+        height: 100vh;
+        background-color: yellowgreen;
+      }
+
+      .body3 {
+        height: 100vh;
+        background-color: yellow;
+      }
+
+      .body4 {
+        height: 100vh;
+        background-color: purple;
+      }
+
+      .body5 {
+        height: 100vh;
+        background-color: peru;
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      @keyframes showContent {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash">
+      <img src="1.jpg" alt="Logo" />
+    </div>
+
+    <div class="main">
+      <div class="body1">
+        <!-- 🔹 Background Video -->
+        <video autoplay muted loop playsinline>
+          <source src="7.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- 🔹 Overlay Header Content -->
+        <div class="header">
+          <ul class="left-header">
+            <li>Overview</li>
+            <li>lorem</li>
+            <li>Bookings</li>
+            <li>Beds</li>
+          </ul>
+
+          <span>
+            <img class="logo" src="2.png" alt="Logo" />
+          </span>
+
+          <ul class="right-header">
+            <li>Gallery</li>
+            <li>lorem</li>
+            <li>Contact</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="body2"></div>
+      <div class="body3"></div>
+      <div class="body4"></div>
+      <div class="body5"></div>
+    </div>
+  </body>
+</html>
