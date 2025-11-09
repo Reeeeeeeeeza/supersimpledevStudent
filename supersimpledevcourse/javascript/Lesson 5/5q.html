@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <p>
+      <button onclick="button_1()">1</button>
+      <button onclick="button_2()">2</button>
+      <button onclick="button_3()">3</button>
+    </p>
+
+    <p>
+      <button onclick="button_4()">4</button>
+      <button onclick="button_5()">5</button>
+      <button onclick="button_6()">6</button>
+    </p>
+
+    <p>
+      <button onclick="button_7()">7</button>
+      <button onclick="button_8()">8</button>
+      <button onclick="button_9()">9</button>
+    </p>
+    <p>
+      <button onclick="button_0()">0</button>
+      <button onclick="buttonAdd()">+</button>
+      <button onclick="buttonSub()">-</button>
+    </p>
+    <p>
+      <button onclick="equalsTo()">=</button>
+      <button onclick="buttonDiv()">/</button>
+      <button onclick="buttonMul()">*</button>
+    </p>
+
+    <script>
+      let calculation = "";
+
+      function button_0() {
+        calculation += "0";
+        console.log(calculation);
+      }
+      function button_1() {
+        calculation += "1";
+        console.log(calculation);
+      }
+      function button_2() {
+        calculation += "2";
+        console.log(calculation);
+      }
+      function button_3() {
+        calculation += "3";
+        console.log(calculation);
+      }
+
+      function button_4() {
+        calculation += "4";
+        console.log(calculation);
+      }
+
+      function button_5() {
+        calculation += "5";
+        console.log(calculation);
+      }
+
+      function button_6() {
+        calculation += "6";
+        console.log(calculation);
+      }
+
+      function button_7() {
+        calculation += "7";
+        console.log(calculation);
+      }
+
+      function button_8() {
+        calculation += "8";
+        console.log(calculation);
+      }
+
+      function button_9() {
+        calculation += "9";
+        console.log(calculation);
+      }
+
+      function buttonAdd() {
+        calculation += " + ";
+        console.log(calculation);
+      }
+
+      function buttonSub() {
+        calculation += " - ";
+        console.log(calculation);
+      }
+
+      function buttonMul() {
+        calculation += " * ";
+        console.log(calculation);
+      }
+
+      function buttonDiv() {
+        calculation += " / ";
+        console.log(calculation);
+      }
+
+      function equalsTo() {
+        calculation = eval(calculation);
+        console.log(calculation);
+      }
+    </script>
+  </body>
+</html>

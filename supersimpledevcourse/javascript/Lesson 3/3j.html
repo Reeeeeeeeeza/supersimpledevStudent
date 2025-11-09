@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg-color: #e3e7ed;
+          --text-color: #0c0b13;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #0c0b13;
+          --text-color: #e3e7ed;
+        }
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: sans-serif;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <script>
-      let multiline = "Total cost: $8.94\nThan you, come again!";
-      alert(multiline);
+      let multiline = "Total cost: $8.94\nThank you, come again!";
+      document.body.innerText = multiline;
     </script>
   </body>
 </html>
