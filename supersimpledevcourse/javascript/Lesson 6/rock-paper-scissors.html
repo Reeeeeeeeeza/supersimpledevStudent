@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <p>Rock Paper Scissors</p>
+  <button onclick="clicked_rock()">Rock</button>
+  <button onclick="clicked_paper()">Paper</button>
+  <button onclick="clicked_scissor()">Scissor</button>
+
+  <script>
+    function clicked_rock(){
+      console.log("clicked");
+      let rans = Math.random();
+      if (rans < 1/3)
+        alert("You chose Rock and computer chose Rock — it's a draw!");
+      else if (rans < 2/3)
+        alert("You chose Rock and computer chose Paper — you lost!");
+      else
+        alert("You chose Rock and computer chose Scissors — you won!");
+    }
+
+    function clicked_paper(){
+      let rans = Math.random();
+      if (rans < 1/3)
+        alert("You chose Paper and computer chose Rock — you won!");
+      else if (rans < 2/3)
+        alert("You chose Paper and computer chose Paper — it's a draw!");
+      else
+        alert("You chose Paper and computer chose Scissors — you lost!");
+    }
+
+    function clicked_scissor(){
+      let rans = Math.random();
+      if (rans < 1/3)
+        alert("You chose Scissors and computer chose Rock — you lost!");
+      else if (rans < 2/3)
+        alert("You chose Scissors and computer chose Paper — you won!");
+      else
+        alert("You chose Scissors and computer chose Scissors — it's a draw!");
+    }
+  </script>
+</body>
+</html>
