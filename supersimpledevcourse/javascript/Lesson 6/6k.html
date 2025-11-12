@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showQuantity()">Show Quantity</button>
+    <button onclick="addToCart()">Add to Cart</button>
+    <button onclick="add2ToCart()">+2</button>
+    <button onclick="add3ToCart()">+3</button>
+    <button onclick="add4ToCart()">+4</button>
+    <button onclick="add5ToCart()">+5</button>
+    
+    <button onclick="resetCart()">Reset Cart</button>
+    <button onclick="removeFromCart()">removeFromCart</button>
+    <script>
+      let cartQuantity = 0;
+      function showQuantity() {
+        console.log(cartQuantity);
+      }
+
+      function addToCart() {
+        if(cartQuantity>=10) alert('The cart is full');
+        else cartQuantity += 1;
+      }
+
+      function add2ToCart() {
+        if(cartQuantity>=9) alert('The cart is full');
+        else cartQuantity += 2;
+      }
+
+      function add3ToCart() {
+        if(cartQuantity>=8) alert('The cart is full');
+        else cartQuantity += 3;
+      }
+
+      function add4ToCart() {
+        if(cartQuantity>=7) alert('The cart is full');
+        else cartQuantity += 4;
+      }
+
+      function add5ToCart() {
+        if(cartQuantity>=6) alert('The cart is full');
+        else cartQuantity += 5;
+      }
+
+      function removeFromCart() {
+        cartQuantity -= 1;
+      }
+
+      function resetCart() {
+        cartQuantity = 0;
+      }
+    </script>
+  </body>
+</html>
