@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const res = {
+            name : 'basketball',
+            price : '2095'
+        }
+        const res1 = {
+            name : 'jordan',
+            price : '1200'
+        }
+        
+        function isSameProduct(product1, product2){
+            let val;
+            ((product1.name==product2.name) && (product1.price==product2.price))  ? val = true : val =  false;
+            return val;
+        }
+        console.log(isSameProduct(res, res1));
+    </script>
+</body>
+</html>

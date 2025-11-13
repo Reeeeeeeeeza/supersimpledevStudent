@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="playGame('heads')" class="heads">heads</button>
+    <button onclick="playGame('tails')" class="tails">tails</button>
+    <script>
+        const obs = {
+            wins: '0',
+            losses: '0'
+        }
+        let result;
+        function playGame(guess){        
+            let random_num = Math.random();
+            (random_num<0.5)?result='heads':result='tails';
+            if(result==guess){
+                obs.wins += 1;
+                console.log('you win!');
+                localStorage.setItem('wins', obs.wins);
+            }
+            else{
+                obs.losses += 1;
+                console.log('you lose!');
+                localStorage.setItem('lose', obs.losses);
+
+            }
+            let wins = (localStorage.getItem('wins'));
+            let lose = (localStorage.getItem('lose'));
+            alert(`wins ${wins} lose ${lose}`);
+
+
+        }
+
+    </script>
+</body>
+</html>

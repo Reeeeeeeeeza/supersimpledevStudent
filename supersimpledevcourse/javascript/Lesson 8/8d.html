@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const res = {
+            name : 'basketball',
+            price : '2095'
+        }
+        const res1 = {
+            name : 'jordan',
+            price : '1200'
+        }
+        
+        function comparePrice(product1, product2){
+            let val;
+            product1.price>product2.price ? val = product2 : val =  product1;
+            return val;
+        }
+        console.log(comparePrice(res, res1));
+    </script>
+</body>
+</html>
