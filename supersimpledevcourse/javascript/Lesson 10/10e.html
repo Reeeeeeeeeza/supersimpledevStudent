@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgba(230, 230, 230);
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            border: none;
+        }
+        .toggle-gaming, .toggle-music{
+            background-color: black;
+            color: white;
+        }
+        .toggle-tech{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="gaming()" class="gaming">Gaming</button>
+    <button onclick="music()" class="music">Music</button>
+    <button onclick="tech()" class="tech">Tech</button>
+    <script>
+        function gaming(){
+            if(window.document.body.querySelector('button').className=='gaming')
+                window.document.body.querySelector('button').className = 'toggle-gaming';
+            else
+                window.document.body.querySelector('button').className = 'gaming';
+            }
+
+        function music(){
+            if(window.document.body.querySelector('button').className=='music')
+                window.document.body.querySelector('button').className = 'toggle-music';
+            else
+                window.document.body.querySelector('button').className = 'music';
+
+            }
+        function tech(){
+            if(window.document.body.querySelector('button').className=='tech')
+                window.document.body.querySelector('button').className = 'toggle-tech';
+            else
+                window.document.body.querySelector('button').className = 'tech';
+
+            }
+
+
+
+    </script>
+</body>
+</html>
