@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeyup="funs(event)" type="text" name="" id="">
+    <p></p>
+    <script>
+        function funs(event){
+            let text = window.document.querySelector('input').value;
+            window.document.querySelector('p').innerHTML = text;
+        }
+    </script>
+</body>
+</html>

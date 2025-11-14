@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showQuantity()">Show Quantity</button>
+    <button onclick="updateCartQuantity(1)">Add to Cart</button>
+    <button onclick="updateCartQuantity(2)">+2</button>
+    <button onclick="updateCartQuantity(3)">+3</button>
+    <button onclick="updateCartQuantity(4)">+4</button>
+    <button onclick="updateCartQuantity(5)">+5</button>    
+    <button onclick="resetCart()">Reset Cart</button>
+    <button onclick="removeFromCart()">removeFromCart</button>
+    <button onclick="sub2FromCart()">-2</button>
+    <button onclick="sub3FromCart()">-3</button>
+    <p></p>
+    <script>
+      let cartQuantity = 0;
+      function funs(){
+        window.document.body.querySelector('p').innerHTML = `Cart quantity: ${cartQuantity}`;
+      }
+      function showQuantity() {
+        funs();
+      }
+
+      function updateCartQuantity(value){
+        if(cartQuantity + value > 10) return;
+        cartQuantity += value;
+        funs();
+      }
+
+      function removeFromCart() {
+        if(cartQuantity <= 0) alert('Not enough items in the cart');
+        else cartQuantity -= 1;
+        funs();
+      }
+      function sub2FromCart() {
+        if(cartQuantity <= 1) alert('Not enough items in the cart');
+        else cartQuantity -= 2;
+        funs();
+      }
+
+      function sub3FromCart() {
+        if(cartQuantity <= 2) alert('Not enough items in the cart');
+        else cartQuantity -= 3;
+        funs();
+    }
+
+      function resetCart() {
+        cartQuantity = 0;
+        funs();
+      }
+    </script>
+  </body>
+</html>
+ 
